@@ -8,15 +8,7 @@
 namespace Drupal\d8_services;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
-
-// The service class.
-use Drupal\Core\Routing\RouteProvider;
-// The service interfaces.
-use Drupal\Core\Routing\PreloadableRouteProviderInterface;
-use Symfony\Cmf\Component\Routing\RouteProviderInterface;
 use Drupal\Core\Routing\RouteProviderInterface;
-use Symfony\Cmf\Component\Routing\PagedRouteProviderInterface;
-use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 /**
  * The example.
@@ -24,7 +16,7 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 class Example {
 
   /**
-   * The router.route_provider service.
+   * The route provider.
    *
    * @var \Drupal\Core\Routing\RouteProviderInterface
    */
@@ -34,7 +26,7 @@ class Example {
    * Constructs a new class instance.
    *
    * @param \Drupal\Core\Routing\RouteProviderInterface $route_provider
-   *   The route_provider service.
+   *   The route provider.
    */
    public function __construct(RouteProviderInterface $route_provider) {
      $this->routeProvider = $route_provider;
