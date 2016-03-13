@@ -8,10 +8,6 @@
 namespace Drupal\d8_services;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
-
-// The service class.
-use Drupal\Core\Access\AccessArgumentsResolverFactory;
-// The service interfaces.
 use Drupal\Core\Access\AccessArgumentsResolverFactoryInterface;
 
 /**
@@ -24,16 +20,16 @@ class Example {
    *
    * @var \Drupal\Core\Access\AccessArgumentsResolverFactoryInterface
    */
-  protected $accessArgumentsResolverFactory;
+  protected $argumentsResolverFactory;
 
   /**
    * Constructs a new class instance.
    *
-   * @param \Drupal\Core\Access\AccessArgumentsResolverFactoryInterface $access_arguments_resolver_factory
-   *   The access_arguments_resolver_factory service.
+   * @param \Drupal\Core\Access\AccessArgumentsResolverFactoryInterface $arguments_resolver_factory
+   *   The access arguments resolver.
    */
-   public function __construct(AccessArgumentsResolverFactoryInterface $access_arguments_resolver_factory) {
-     $this->accessArgumentsResolverFactory = $access_arguments_resolver_factory;
+   public function __construct(AccessArgumentsResolverFactoryInterface $arguments_resolver_factory) {
+     $this->argumentsResolverFactory = $arguments_resolver_factory;
    }
 
    /**
