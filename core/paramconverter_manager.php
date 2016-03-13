@@ -8,10 +8,6 @@
 namespace Drupal\d8_services;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
-
-// The service class.
-use Drupal\Core\ParamConverter\ParamConverterManager;
-// The service interfaces.
 use Drupal\Core\ParamConverter\ParamConverterManagerInterface;
 
 /**
@@ -20,20 +16,20 @@ use Drupal\Core\ParamConverter\ParamConverterManagerInterface;
 class Example {
 
   /**
-   * The paramconverter_manager service.
+   * The param converter manager.
    *
    * @var \Drupal\Core\ParamConverter\ParamConverterManagerInterface
    */
-  protected $paramconverterManager;
+  protected $paramConverterManager;
 
   /**
    * Constructs a new class instance.
    *
-   * @param \Drupal\Core\ParamConverter\ParamConverterManagerInterface $paramconverter_manager
-   *   The paramconverter_manager service.
+   * @param \Drupal\Core\ParamConverter\ParamConverterManagerInterface $param_converter_manager
+   *   The param converter manager.
    */
-   public function __construct(ParamConverterManagerInterface $paramconverter_manager) {
-     $this->paramconverterManager = $paramconverter_manager;
+   public function __construct(ParamConverterManagerInterface $param_converter_manager) {
+     $this->paramConverterManager = $param_converter_manager;
    }
 
    /**
