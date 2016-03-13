@@ -8,12 +8,7 @@
 namespace Drupal\d8_services;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
-
-// The service class.
-use Drupal\Core\Session\AccountProxy;
-// The service interfaces.
 use Drupal\Core\Session\AccountProxyInterface;
-use Drupal\Core\Session\AccountInterface;
 
 /**
  * The example.
@@ -21,7 +16,7 @@ use Drupal\Core\Session\AccountInterface;
 class Example {
 
   /**
-   * The current_user service.
+   * The current user.
    *
    * @var \Drupal\Core\Session\AccountProxyInterface
    */
@@ -31,7 +26,7 @@ class Example {
    * Constructs a new class instance.
    *
    * @param \Drupal\Core\Session\AccountProxyInterface $current_user
-   *   The current_user service.
+   *   The current user.
    */
    public function __construct(AccountProxyInterface $current_user) {
      $this->currentUser = $current_user;
