@@ -20,7 +20,7 @@ class Example {
   /**
    * The database connection.
    *
-   * @var \use Drupal\Core\Database\Connection;
+   * @var \Drupal\Core\Database\Connection;
    */
   protected $connection;
 
