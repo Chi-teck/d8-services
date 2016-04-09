@@ -10,7 +10,7 @@ namespace Drupal\d8_services;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 // The service class.
-use Drupal\Core\Database\Driver\mysql\Connection;
+use Drupal\Core\Database\Connection;
 
 /**
  * The example.
@@ -18,20 +18,20 @@ use Drupal\Core\Database\Driver\mysql\Connection;
 class Example {
 
   /**
-   * The database service.
+   * The database connection.
    *
-   * @var \Drupal\Core\Database\Driver\mysql\Connection
+   * @var \use Drupal\Core\Database\Connection;
    */
-  protected $database;
+  protected $connection;
 
   /**
    * Constructs a new class instance.
    *
-   * @param \Drupal\Core\Database\Driver\mysql\Connection $database
-   *   The database service.
+   * @param \Drupal\Core\Database\Connection $database
+   * The database connection.
    */
-   public function __construct(Connection $database) {
-     $this->database = $database;
+   public function __construct(Connection $connection) {
+     $this->connection = $connection;
    }
 
    /**
