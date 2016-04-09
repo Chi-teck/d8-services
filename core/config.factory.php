@@ -21,20 +21,20 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 class Example {
 
   /**
-   * The config.factory service.
+   * The config factory service.
    *
    * @var \Drupal\Core\Config\ConfigFactoryInterface
    */
-  protected $factory;
+  protected $configFactory;
 
   /**
    * Constructs a new class instance.
    *
-   * @param \Drupal\Core\Config\ConfigFactoryInterface $factory
-   *   The factory service.
+   * @param \Drupal\Core\Config\ConfigFactoryInterface $config_factory
+   *   The config factory.
    */
-   public function __construct(ConfigFactoryInterface $factory) {
-     $this->factory = $factory;
+   public function __construct(ConfigFactoryInterface $config_factory) {
+     $this->factory = $config_factory;
    }
 
    /**
