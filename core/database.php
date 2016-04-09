@@ -28,7 +28,7 @@ class Example {
    * Constructs a new class instance.
    *
    * @param \Drupal\Core\Database\Connection $database
-   * The database connection.
+   *   The database connection.
    */
    public function __construct(Connection $connection) {
      $this->connection = $connection;
