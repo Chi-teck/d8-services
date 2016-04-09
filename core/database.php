@@ -27,7 +27,7 @@ class Example {
   /**
    * Constructs a new class instance.
    *
-   * @param \Drupal\Core\Database\Connection $database
+   * @param \Drupal\Core\Database\Connection $connection
    *   The database connection.
    */
    public function __construct(Connection $connection) {
