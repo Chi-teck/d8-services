@@ -23,17 +23,17 @@ use Drupal\Core\Form\FormCacheInterface;
 class Example {
 
   /**
-   * The form_builder service.
+   * The form builder.
    *
-   * @var \Drupal\Core\Form\FormBuilderInterface
+   * @var \Drupal\Core\Form\FormBuilderInterface;
    */
   protected $formBuilder;
 
   /**
    * Constructs a new class instance.
    *
-   * @param \Drupal\Core\Form\FormBuilderInterface $form_builder
-   *   The form_builder service.
+   * @param \Drupal\Core\Form\FormBuilderInterface; $form_builder
+   *   The form builder.
    */
    public function __construct(FormBuilderInterface $form_builder) {
      $this->formBuilder = $form_builder;
