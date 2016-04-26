@@ -32,7 +32,7 @@ class Example {
    * Constructs a new class instance.
    *
    * @param \Drupal\Core\Routing\RouteMatchInterface $route_match
-   *   The current_route_match service.
+   *   The route match.
    */
    public function __construct(RouteMatchInterface $route_match) {
      $this->routeMatch = $route_match;
