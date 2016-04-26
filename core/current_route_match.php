@@ -22,20 +22,20 @@ use Drupal\Core\Routing\StackedRouteMatchInterface;
 class Example {
 
   /**
-   * The current_route_match service.
+   * The currently active route match object.
    *
-   * @var \Drupal\Core\Routing\CurrentRouteMatch
+   * @var \Drupal\Core\Routing\RouteMatchInterface
    */
-  protected $currentRouteMatch;
+  protected $routeMatch;
 
   /**
    * Constructs a new class instance.
    *
-   * @param \Drupal\Core\Routing\CurrentRouteMatch $current_route_match
+   * @param \Drupal\Core\Routing\RouteMatchInterface $current_route_match
    *   The current_route_match service.
    */
-   public function __construct(CurrentRouteMatch $current_route_match) {
-     $this->currentRouteMatch = $current_route_match;
+   public function __construct(RouteMatchInterface $route_match) {
+     $this->routeMatch = $route_match;
    }
 
    /**
