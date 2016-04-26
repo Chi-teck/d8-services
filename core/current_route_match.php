@@ -31,7 +31,7 @@ class Example {
   /**
    * Constructs a new class instance.
    *
-   * @param \Drupal\Core\Routing\RouteMatchInterface $current_route_match
+   * @param \Drupal\Core\Routing\RouteMatchInterface $route_match
    *   The current_route_match service.
    */
    public function __construct(RouteMatchInterface $route_match) {
